@@ -1,0 +1,128 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, #111827, #000000);
+  text-align: center;
+  padding: 10px;
+}
+
+.hero-overlay {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-overlay h1 {
+  font-family: "Press Start 2P", serif;
+  font-weight: bold;
+  font-size: 4.5rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.hackathonix {
+  color: white;
+}
+
+.gradient-25 {
+  background: linear-gradient(to right, #60a5fa, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-overlay p {
+  font-family: "VT323", serif;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.register-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  font-family: "VT323", serif;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 35px;
+  position: relative;
+  box-shadow: 0 0 15px 5px rgba(96, 165, 250, 0.8), 0 0 25px 10px rgba(124, 58, 237, 0.8);
+}
+
+.register-btn::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(to right, #60a5fa, #7c3aed);
+  border-radius: 8px;
+  z-index: -1;  /* Ensure the gradient appears behind the button */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect */
+.register-btn:hover {
+  background: linear-gradient(to right, #60a5fa, #7c3aed);
+  color: black;
+  border-color: transparent; /* Optional, you can remove border if desired on hover */
+}
+
+.register-btn:hover::before {
+  opacity: 0;  /* Remove glow effect on hover */
+}
+
+
+@media (max-width: 1024px) {
+  .hero-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.8rem;
+  }
+
+  .register-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .register-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-overlay h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.4 rem;
+  }
+
+  .register-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}

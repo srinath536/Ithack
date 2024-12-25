@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #111827;; 
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Adjust logos on small screens */
+}
+
+.logo-img:first-child {
+  width: 120px; /* Main logo size */
+  height: auto;
+}
+
+.logo-img {
+  width: 80px; /* Secondary logo size */
+  height: auto;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links ul li a {
+  color: #e2d3f4;
+  font-family: "IBM Plex Mono", serif;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #0033ff;
+}
+
+.burger-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    width: 90%; /* Reduce header width */
+  }
+
+  .logo-img {
+    width: 60px; /* Scale logo size */
+  }
+}
+
+@media (max-width: 768px) {
+  .burger-icon {
+    display: block; /* Show burger icon */
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    background:linear-gradient(to bottom right, #111827, #000000);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    border-radius: 10px;
+  }
+
+  .nav-links.open {
+    display: block; /* Toggle nav on small screens */
+  }
+
+  .nav-links ul {
+    display: block;
+    padding: 10px;
+  }
+
+  .nav-links ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-links ul li a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 100%;
+  }
+
+  .logo-img {
+    width: 60px; /* Adjust logo size */
+  }
+
+  .nav-links ul li a {
+    font-size: 16px;
+  }
+}
