@@ -29,9 +29,10 @@
 
 
 
+
 .register-btn {
   padding: 10px 20px;
-  background-color: transparent;
+  background: linear-gradient(to right, #9A39A7, #623C73);
   color: black;
   font-family: "Goldman", serif;
   font-weight: 400;
@@ -43,7 +44,11 @@
   transition: all 0.3s ease;
   margin-top: 35px;
   position: relative;
-  background: linear-gradient(to right, #9A39A7, #623C73);;
+}
+
+.register-btn:hover {
+  background: black;
+  color: #8B41DD;
 }
 
 

@@ -1,0 +1,42 @@
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Set a base height */
+    width: 100%;
+    background-color: #10021E; /* Example background */
+    padding: 1rem;
+    margin-top: -90px;
+  }
+  
+  /* Logo Image */
+  .logo {
+    max-width: 100%; /* Ensures the logo resizes within the container */
+    max-height: 100%;
+    object-fit: contain; /* Maintains the aspect ratio */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .logo-container {
+      height: 70vh;
+      margin-top: -220px;
+    }
+  
+    .logo {
+      max-height: 70vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-container {
+      height: 70vh;
+      margin-top: -220px;
+    }
+  
+    .logo {
+      max-height: 70vh;
+    }
+  }
+  

@@ -1,50 +1,94 @@
 .about-container {
-    background-color: #10021E; /* Background of the container */
-    color: white; /* Default text color */
-    padding: 40px;
-    border-radius: 20px; /* Rounded corners for the container */
-    text-align: center;
-    max-width: 800px;
-    margin: 20px auto; /* Center the container on the page */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional box shadow */
-  }
-  
+  background-color: #10021E; /* Background of the container */
+  color: white; /* Default text color */
+  padding: 40px;
+  border-radius: 20px; /* Rounded corners for the container */
+  text-align: center;
+  max-width: 90%; /* Limit width but allow flexibility */
+  margin: 20px auto; /* Center the container on the page */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional box shadow */
+  margin-top: -75px;
+}
+
+.about-heading {
+  font-family: "Goldman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: radial-gradient(circle, #B081D2, #5B426C); /* Radial gradient on the text */
+  -webkit-background-clip: text; /* Clip the gradient to the text for WebKit browsers */
+  -moz-background-clip: text; /* Clip the gradient to the text for Firefox */
+  background-clip: text; /* Ensure the gradient is clipped to the text */
+  color: transparent; /* Make the text color transparent */
+}
+
+.about-text {
+  font-family: "Glory", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem; /* Slightly smaller base font size */
+  line-height: 1.6;
+  margin: 0 auto; /* Center text block */
+  text-align: left; /* Restrict text width for better readability */
+  max-width: 700px; /* Constrain line length */
+}
+
+.brochure {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #9A39A7, #623C73);
+  color: black;
+  font-family: "Goldman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 35px;
+  position: relative;
+}
+
+.brochure:hover {
+  background: black;
+  color: #8B41DD;
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media (max-width: 768px) {
   .about-heading {
-    font-family: "Goldman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    background: radial-gradient(circle, #B081D2, #5B426C); /* Radial gradient on the text */
-    -webkit-background-clip: text; /* Clip the gradient to the text for WebKit browsers */
-    -moz-background-clip: text; /* Clip the gradient to the text for Firefox */
-    background-clip: text; /* Ensure the gradient is clipped to the text */
-    color: transparent; /* Make the text color transparent */
+    font-size: 2.5rem;
   }
-  
+
   .about-text {
-    font-family: "Glory", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin: 0;
-    text-align: center; /* Restrict text width for better readability */
+    font-size: 1rem;
+    max-width: 90%; 
+    text-align: center;/* Narrow width for smaller screens */
   }
+
   .brochure {
-    padding: 10px 20px;
-    background-color: transparent;
-    color: white;
-    font-family: "Goldman", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    border: 3px solid black;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 35px;
-    position: relative;
-    background-color: black ;
+    font-size: 1rem;
+    padding: 8px 15px;
   }
-  
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 2.5rem;
+  }
+
+  .about-text {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .brochure {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
