@@ -7,6 +7,8 @@ import Prizes from './components/Prizes';
 import Sponsors from './components/Sponsors';
 import Core from './components/Core';
 import TeamMembers from './components/TeamMembers';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Sponsors/>
       <Core/>
       <TeamMembers/>
+      <FAQ/>
+      <Footer/>
      </div>
       
        
