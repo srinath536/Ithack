@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
 
         
         <div className="college-info">
-          <p><a href="https://github.com/srinath536" target="_blank" rel="noopener noreferrer" className="college-link">Github</a></p>
+          <p><a href="https://github.com/srinath536" target="_blank" rel="noopener noreferrer" className="college-link">KCG College Of Technology</a></p>
         </div>
 
         

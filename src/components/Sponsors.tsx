@@ -1,12 +1,15 @@
 import React from "react";
 import "./Sponsors.css";
-import slogo1 from "../assets/apple.png"; // Correctly import the image
+import gpt from "../assets/gpt.png";
+import fb from "../assets/fb.png";
+import dell from "../assets/dell.png"
+import stripe from "../assets/stripe.png"
 
 const sponsors = [
-  { id: 1,  image: slogo1 }, // Directly assign the imported string
-  { id: 2,  image: slogo1 },
-  { id: 3,  image: slogo1 },
-  { id: 4,  image: slogo1 },
+  { id: 1,  image: gpt }, // Directly assign the imported string
+  { id: 2,  image: dell },
+  { id: 3,  image: fb },
+  { id: 4,  image: stripe },
 ];
 
 const Sponsors: React.FC = () => {
