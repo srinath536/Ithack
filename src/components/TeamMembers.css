@@ -1,0 +1,61 @@
+.team-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #10021E;
+  }
+  
+  .team-heading {
+    font-family: "Goldman", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: radial-gradient(circle, #C392EA, #8A68B3); /* Brighter gradient */
+    -webkit-background-clip: text; /* Clip the gradient to the text for WebKit browsers */
+    -moz-background-clip: text; /* Clip the gradient to the text for Firefox */
+    background-clip: text; /* Ensure the gradient is clipped to the text */
+    color: transparent; /* Make the text color transparent */
+    text-shadow: 
+      0 0 2px rgba(195, 146, 234, 0.8), 
+      0 0 1px rgba(138, 104, 179, 0.6), 
+      0 0 1px rgba(195, 146, 234, 0.5); /* Soft glow */
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    gap: 1.5rem;
+    justify-items: center; /* Center grid items horizontally */
+  }
+  
+  .team-card {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .team-image {
+    max-width: 200px; /* Restrict the image width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .team-grid {
+      grid-template-columns: 1fr; /* One column for smaller screens */
+      justify-items: center; /* Ensure centering on smaller screens as well */
+    }
+  
+    .team-image {
+      max-width: 180px; /* Reduce image size further for smaller screens */
+    }
+  }
+  
