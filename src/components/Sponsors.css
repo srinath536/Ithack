@@ -1,0 +1,54 @@
+.sponsors-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #10021E;
+  }
+  
+  .sponsors-heading {
+    font-family: "Goldman", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: radial-gradient(circle, #C392EA, #8A68B3); /* Brighter gradient */
+    -webkit-background-clip: text; /* Clip the gradient to the text for WebKit browsers */
+    -moz-background-clip: text; /* Clip the gradient to the text for Firefox */
+    background-clip: text; /* Ensure the gradient is clipped to the text */
+    color: transparent; /* Make the text color transparent */
+    text-shadow: 
+      0 0 2px rgba(195, 146, 234, 0.8), 
+      0 0 1px rgba(138, 104, 179, 0.6), 
+      0 0 1px rgba(195, 146, 234, 0.5); /* Soft glow */
+  }
+  
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    gap: 1.5rem;
+  }
+  
+  .sponsor-card {
+    background: #10021E;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .sponsor-image {
+    max-width: 25%; /* Smaller width for the logos */
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sponsors-grid {
+      grid-template-columns: 1fr; /* One column for smaller screens */
+    }
+  
+    .sponsor-image {
+      max-width: 70%; /* Smaller logos for smaller screens */
+    }
+  }
+  

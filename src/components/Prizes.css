@@ -1,0 +1,45 @@
+/* Prizes Container */
+.prizes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Set base height */
+    width: 100%;
+    background-color: #10021E; /* Background color */
+    padding: 1rem;
+    overflow: hidden; /* Hide overflow if the image is large */
+  }
+  
+  /* Prizes Image */
+  .prizes-image {
+    max-width: 90%; /* Restrict the image width */
+    max-height: 100%; /* Restrict the image height */
+    object-fit: contain; /* Preserve aspect ratio */
+  }
+  
+  /* Responsive Design */
+  
+  /* For Tablets */
+  @media (max-width: 768px) {
+    .prizes-container {
+      height: 70vh; /* Adjust height for smaller screens */
+    }
+  
+    .prizes-image {
+      max-width: 85%; /* Adjust image width */
+      max-height: 90%;
+    }
+  }
+  
+  /* For Mobile Devices */
+  @media (max-width: 480px) {
+    .prizes-container {
+      height: 70vh; /* Further reduce container height */
+    }
+  
+    .prizes-image {
+      max-width: 80%;
+      max-height: 85%;
+    }
+  }
+  
