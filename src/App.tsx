@@ -9,6 +9,7 @@ import Core from './components/Core';
 import TeamMembers from './components/TeamMembers';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import AboutDept from './components/AboutDept';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Header/>
       <Herosection/>
       <Logo/>
+      <AboutDept/>
       <AboutHackathonix/>
       <Prizes/>
       <Sponsors/>

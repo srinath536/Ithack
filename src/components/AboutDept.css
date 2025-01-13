@@ -1,0 +1,160 @@
+.about-dept-container {
+    padding: 2rem;
+    text-align: center;
+    background-color: #10021e;
+    color: white;
+    font-family: "Goldman", sans-serif;
+}
+
+.about-dept-title {
+    font-family: "Goldman", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: radial-gradient(circle, #C392EA, #8A68B3); /* Brighter gradient */
+    -webkit-background-clip: text; /* Clip the gradient to the text for WebKit browsers */
+    -moz-background-clip: text; /* Clip the gradient to the text for Firefox */
+    background-clip: text; /* Ensure the gradient is clipped to the text */
+    color: transparent; /* Make the text color transparent */
+    text-shadow: 
+      0 0 2px rgba(195, 146, 234, 0.8), 
+      0 0 1px rgba(138, 104, 179, 0.6), 
+      0 0 1px rgba(195, 146, 234, 0.5); /* Soft glow */
+}
+
+.about-dept-description {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-family: "Glory", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem; /* Slightly smaller base font size */
+    line-height: 1.6;
+    color: white;
+}
+
+.carousel-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    padding: 1rem;
+}
+
+.staff-card {
+    background-color: #291845;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+}
+
+.staff-photo {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto 1rem; /* Center image horizontally and add space below */
+    border-radius: 8px; /* Subtle rounded corners */
+    display: block; /* Ensures the centering works properly */
+}
+
+.staff-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.staff-profession {
+    font-size: 1rem;
+    font-style: italic;
+    color: #c8a2c8;
+}
+/* Customize the left and right arrows with FontAwesome icons */
+.slick-prev, .slick-next {
+    font-size: 2rem;  /* Adjust the size of the icon */
+    color: white;
+    background: transparent; /* Remove the default background */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure they appear on top */
+  }
+  
+  .slick-prev {
+    left: -30px;
+  }
+  
+  .slick-next {
+    right: -30px;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #C392EA; /* Change color on hover */
+  }
+  
+  
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-dept-title {
+        font-size: 2rem;
+    }
+
+    .about-dept-description {
+        font-size: 0.9rem;
+    }
+
+    .staff-card {
+        padding: 1rem;
+    }
+
+    .staff-photo {
+        width: 120px;
+    }
+    .slick-prev, .slick-next {
+        font-size: 1.5rem; /* Adjust the icon size for smaller screens */
+      }
+}
+
+@media (max-width: 768px) {
+    .about-dept-title {
+        font-size: 1.8rem;
+    }
+
+    .about-dept-description {
+        font-size: 0.85rem;
+    }
+
+    .carousel-container {
+        max-width: 90%;
+    }
+    .slick-prev, .slick-next {
+        font-size: 1.2rem;
+      }
+}
+
+@media (max-width: 480px) {
+    .about-dept-title {
+        font-size: 1.5rem;
+    }
+
+    .about-dept-description {
+        font-size: 0.8rem;
+    }
+
+    .staff-card {
+        padding: 1rem;
+    }
+
+    .staff-photo {
+        width: 100px;
+    }
+}
