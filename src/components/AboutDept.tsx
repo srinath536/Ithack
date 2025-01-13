@@ -49,31 +49,31 @@ const staffData = [
   // Added 5 more staff members
   {
     id: 6,
-    name: "Dr. JANE DOE",
+    name: "Dr. MUTHUSELVAN S ",
     profession: "Head of Research",
     photo: johnPhoto,
   },
   {
     id: 7,
-    name: "Dr. JOHN SMITH",
+    name: "Dr. MUTHUSELVAN S ",
     profession: "Assistant Lecturer",
     photo: janePhoto,
   },
   {
     id: 8,
-    name: "Dr. EMILY ROGERS",
+    name: "Dr. MUTHUSELVAN S ",
     profession: "Postdoctoral Researcher",
     photo: michaelPhoto,
   },
   {
     id: 9,
-    name: "Dr. DAVID WILLIAMS",
+    name: "Dr. MUTHUSELVAN S ",
     profession: "Visiting Scholar",
     photo: emilyPhoto,
   },
   {
     id: 10,
-    name: "Dr. SARAH JOHNSON",
+    name: "Dr. MUTHUSELVAN S ",
     profession: "Admin Assistant",
     photo: davidPhoto,
   },
