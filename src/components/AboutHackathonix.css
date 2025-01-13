@@ -34,9 +34,8 @@
   font-weight: 400;
   font-size: 1.5rem; /* Slightly smaller base font size */
   line-height: 1.6;
-  margin: 0 auto; /* Center text block */
-  text-align: left; /* Restrict text width for better readability */
-  max-width: 700px; /* Constrain line length */
+  margin: 0 auto; /* Center text block */ /* Restrict text width for better readability */
+  max-width: 800px; /* Constrain line length */
 }
 
 .brochure {
@@ -70,8 +69,7 @@
 
   .about-text {
     font-size: 1rem;
-    max-width: 90%; 
-    text-align: center;/* Narrow width for smaller screens */
+    max-width: 90%; /* Narrow width for smaller screens */
   }
 
   .brochure {
@@ -89,7 +87,6 @@
   .about-text {
     font-size: 1.3rem;
     line-height: 1.5;
-    text-align: left;
     max-width: 100%;
   }
 

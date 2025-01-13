@@ -18,10 +18,10 @@ function App() {
       <Header/>
       <Herosection/>
       <Logo/>
-      <AboutDept/>
       <AboutHackathonix/>
       <Prizes/>
       <Sponsors/>
+      <AboutDept/>
       <Core/>
       <TeamMembers/>
       <FAQ/>

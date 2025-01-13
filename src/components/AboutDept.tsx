@@ -46,6 +46,37 @@ const staffData = [
     profession: "Lab Assistant",
     photo: davidPhoto,
   },
+  // Added 5 more staff members
+  {
+    id: 6,
+    name: "Dr. JANE DOE",
+    profession: "Head of Research",
+    photo: johnPhoto,
+  },
+  {
+    id: 7,
+    name: "Dr. JOHN SMITH",
+    profession: "Assistant Lecturer",
+    photo: janePhoto,
+  },
+  {
+    id: 8,
+    name: "Dr. EMILY ROGERS",
+    profession: "Postdoctoral Researcher",
+    photo: michaelPhoto,
+  },
+  {
+    id: 9,
+    name: "Dr. DAVID WILLIAMS",
+    profession: "Visiting Scholar",
+    photo: emilyPhoto,
+  },
+  {
+    id: 10,
+    name: "Dr. SARAH JOHNSON",
+    profession: "Admin Assistant",
+    photo: davidPhoto,
+  },
 ];
 
 const AboutDept: React.FC = () => {

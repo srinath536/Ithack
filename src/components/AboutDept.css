@@ -126,11 +126,11 @@
 
 @media (max-width: 768px) {
     .about-dept-title {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .about-dept-description {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .carousel-container {
@@ -143,11 +143,11 @@
 
 @media (max-width: 480px) {
     .about-dept-title {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .about-dept-description {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 
     .staff-card {
