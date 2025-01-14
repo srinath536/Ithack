@@ -10,26 +10,25 @@ import TeamMembers from './components/TeamMembers';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import AboutDept from './components/AboutDept';
-
+import Domains from './components/Domains';
 
 function App() {
   return (
     <div>
-      <Header/>
-      <Herosection/>
-      <Logo/>
-      <AboutHackathonix/>
-      <Prizes/>
-      <Sponsors/>
-      <AboutDept/>
-      <Core/>
-      <TeamMembers/>
-      <FAQ/>
-      <Footer/>
-     </div>
-      
-       
-  )
+      <Header />
+      <section id="home"><Herosection /></section>
+      <Logo />
+      <section id="about"><AboutHackathonix /></section>
+      <Prizes />
+      <section id="domains"><Domains /></section>
+      <Sponsors />
+      <AboutDept />
+      <Core />
+      <TeamMembers />
+      <FAQ />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

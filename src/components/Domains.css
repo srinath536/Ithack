@@ -1,0 +1,105 @@
+.domains-section {
+    background-color:#10021E ;
+    padding: 60px 20px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  .domains-header {
+    margin-bottom: 40px;
+  }
+  
+  .domains-header h2 {
+  font-family: "Goldman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: radial-gradient(circle, #C392EA, #8A68B3); /* Brighter gradient */
+  -webkit-background-clip: text; /* Clip the gradient to the text for WebKit browsers */
+  -moz-background-clip: text; /* Clip the gradient to the text for Firefox */
+  background-clip: text; /* Ensure the gradient is clipped to the text */
+  color: transparent; /* Make the text color transparent */
+  text-shadow: 
+    0 0 2px rgba(195, 146, 234, 0.8), 
+    0 0 1px rgba(138, 104, 179, 0.6), 
+    0 0 1px rgba(195, 146, 234, 0.5); /* Soft glow */
+  }
+  
+  .domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: stretch;
+  }
+  
+  .domain-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .domain-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .domain-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #BC5F95;
+    text-shadow: 0 0 15px #BC5F95;
+  }
+  
+  .domain-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: "Goldman", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .domain-description {
+    font-size: 1rem;
+    color: #dddddd;
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: "Goldman", serif;
+    font-style: normal;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .domains-header h2 {
+      font-size: 2rem;
+    }
+  
+    .domains-header p {
+      font-size: 1rem;
+    }
+  
+    .domain-card {
+      padding: 15px;
+    }
+  
+    .domain-title {
+      font-size: 1.3rem;
+    }
+  
+    .domain-description {
+      font-size: 0.9rem;
+    }
+  }
+  

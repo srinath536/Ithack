@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Header.css';
 import kcglogo from '../assets/KCG logo.png';
 import itlogo from '../assets/IT logo.png';
+
 const Header: React.FC = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
