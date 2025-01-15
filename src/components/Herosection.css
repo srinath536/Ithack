@@ -4,7 +4,8 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: #10021E;
+  background: linear-gradient(120deg, rgba(16, 2, 30, 0.7), rgba(16, 2, 30, 0.7)),
+    url('../assets/bg.jpg') center/cover no-repeat;
   text-align: center;
   padding: 10px;
 }

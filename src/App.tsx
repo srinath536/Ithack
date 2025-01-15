@@ -15,7 +15,7 @@ import Domains from './components/Domains';
 function App() {
   return (
     <div>
-      <Header />
+      <Header/>
       <section id="home"><Herosection /></section>
       <Logo />
       <section id="about"><AboutHackathonix /></section>

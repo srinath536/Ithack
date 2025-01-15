@@ -5,7 +5,7 @@
     justify-content: center;
     height: 70vh; /* Set base height */
     width: 100%;
-    background-color: #10021E; /* Background color */
+    background-color:  #0b0116; /* Background color */
     padding: 1rem;
     overflow: hidden; /* Hide overflow if the image is large */
   }
