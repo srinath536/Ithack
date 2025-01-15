@@ -75,7 +75,7 @@
 
 @media (max-width: 480px) {
   .hero-overlay h1 {
-    font-size: 8.5rem; /* Adjust heading size for mobile */
+    font-size: 8.0rem; /* Adjust heading size for mobile */
     text-align: center;
     line-height: 1.2;
     text-align: left;
